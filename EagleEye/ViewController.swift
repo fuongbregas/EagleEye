@@ -7,17 +7,22 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     var currentValue: Int = 50
     var targetValue: Int = 50
     var score: Int = 0
     var round: Int = 0
+    var gaugauSound: AVAudioPlayer = AVAudioPlayer()
+    
+    
     
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var targetLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var roundLabel: UILabel!
+    @IBOutlet weak var eaglePicture: UIImageView!
     
     // Every time player submits, new round starts
     func startNewRound(){
@@ -49,6 +54,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         startNewRound()
         updateLabel()
+        
+        let musicFile = Bundle.main.path(forResource: "cho", ofType: ".mp3")
+        do{
+            try gaugauSound = AVAudioPlayer(contentsOf: URL(fileURLWithPath: musicFile!))
+        }
+        
+        catch{
+            print(error)
+        }
+        
+        
         /*
         currentValue = lroundf(slider.value)
         targetValue = 1 + Int(arc4random_uniform(100))
@@ -100,6 +116,11 @@ class ViewController: UIViewController {
     @IBAction func sliderMoved(_ slider: UISlider){
         //print("The value of the slider is now: \(slider.value)")
         currentValue = lroundf(slider.value)
+    }
+    
+    // Tap image will play the sound
+    @IBAction func tapImage(_ sender:AnyObject){
+        gaugauSound.play()
     }
     
 }

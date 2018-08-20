@@ -118,11 +118,20 @@
                                     <segue destination="GbX-Vt-usw" kind="presentation" id="LQ1-CZ-Bd4"/>
                                 </connections>
                             </button>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="postage-stamp-usa-bold-eagle-picture_gg55544815" translatesAutoresizingMaskIntoConstraints="NO" id="ZAJ-OF-BIb">
+                                <rect key="frame" x="41" y="39" width="89" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="NcY-sb-Pom" appends="YES" id="Qfc-mh-twA"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="eaglePicture" destination="ZAJ-OF-BIb" id="ot2-lC-w5y"/>
                         <outlet property="roundLabel" destination="Xtk-eo-SzJ" id="LL8-U0-Y9r"/>
                         <outlet property="scoreLabel" destination="IzG-iZ-zvL" id="3X3-xo-r4s"/>
                         <outlet property="slider" destination="xJx-e0-RmM" id="YFp-0A-xSO"/>
@@ -130,8 +139,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="NcY-sb-Pom">
+                    <connections>
+                        <action selector="tapImage:" destination="BYZ-38-t0r" id="DCm-zv-5ze"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="238" y="-358"/>
+            <point key="canvasLocation" x="237.93103448275863" y="-359.19999999999999"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="8CU-lZ-zOA">
@@ -164,7 +178,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N9Z-fU-YaD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="597" y="383"/>
+            <point key="canvasLocation" x="96" y="476"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="postage-stamp-usa-bold-eagle-picture_gg55544815" width="175" height="176"/>
+    </resources>
 </document>

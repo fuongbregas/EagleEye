@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71938FE4212B653D00BB94DE /* cho.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71938FE3212B653D00BB94DE /* cho.mp3 */; };
+		71938FE7212B664F00BB94DE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71938FE6212B664F00BB94DE /* AVFoundation.framework */; };
 		71AE38FC212A4FC300776270 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AE38FB212A4FC300776270 /* AppDelegate.swift */; };
 		71AE38FE212A4FC300776270 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AE38FD212A4FC300776270 /* ViewController.swift */; };
 		71AE3901212A4FC300776270 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71AE38FF212A4FC300776270 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		71938FE3212B653D00BB94DE /* cho.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = cho.mp3; path = ../../../../../Users/fuongbregas/Desktop/cho.mp3; sourceTree = "<group>"; };
+		71938FE6212B664F00BB94DE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		71AE38F8212A4FC300776270 /* EagleEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EagleEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71AE38FB212A4FC300776270 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71AE38FD212A4FC300776270 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +35,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71938FE7212B664F00BB94DE /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71938FE5212B664F00BB94DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71938FE6212B664F00BB94DE /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		71AE38EF212A4FC300776270 = {
 			isa = PBXGroup;
 			children = (
 				71AE38FA212A4FC300776270 /* EagleEye */,
 				71AE38F9212A4FC300776270 /* Products */,
+				71938FE5212B664F00BB94DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +70,7 @@
 		71AE38FA212A4FC300776270 /* EagleEye */ = {
 			isa = PBXGroup;
 			children = (
+				71938FE3212B653D00BB94DE /* cho.mp3 */,
 				71AE38FB212A4FC300776270 /* AppDelegate.swift */,
 				71AE38FD212A4FC300776270 /* ViewController.swift */,
 				71AE390D212A8DAC00776270 /* AboutViewController.swift */,
@@ -128,6 +143,7 @@
 				71AE3906212A4FC400776270 /* LaunchScreen.storyboard in Resources */,
 				71AE3903212A4FC400776270 /* Assets.xcassets in Resources */,
 				71AE3901212A4FC300776270 /* Main.storyboard in Resources */,
+				71938FE4212B653D00BB94DE /* cho.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
